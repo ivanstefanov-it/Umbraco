@@ -18,7 +18,7 @@
     <link href="/css/styles.css" rel="stylesheet" />
 </head>
 <body>
-    @await Html.PartialAsync("~/Views/Partials/navigation.cshtml")
+    @await Component.InvokeAsync("Navigation", Model)
     @await Html.PartialAsync("~/Views/Partials/header.cshtml")
     @RenderBody()
     @await Html.PartialAsync("~/Views/Partials/footer.cshtml")
